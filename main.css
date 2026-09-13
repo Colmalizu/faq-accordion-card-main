@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+--Very-dark-desaturated-blue: hsl(238, 29%, 16%)
+--Soft-red: hsl(14, 88%, 65%)
+--grad-violet: hsl(273, 75%, 66%)
+--grad-blue: hsl(240, 73%, 65%)
+--text1: hsl(237, 12%, 33%)
+--text2: hsl(240, 6%, 50%)
+--line: hsl(240, 5%, 91%)
+--height: 46px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, var(--grad-violet), var(--grad-blue));
+  color: var(--text2);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+}
+
+.card {
+  display: flex;
+  width: 760px;
+  height: 430px;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card-img-box {
+ position: absolute;
+  width: 176px;
+  top: 170px;
+  left: -86px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.card-left {
+  width: 342px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-left img women {
+  width: 400px;  
+  position: relative;
+  top: 210px;
+  left: -76px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.card-left-img-pattern {
+    position: absolute;
+    width: 200%;
+    top: -35%;
+    left: -100%;
+    z-index: 1;
+}
+
+.card-right {
+  width: 418px;
+  padding: 50px 90px 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 22px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+
